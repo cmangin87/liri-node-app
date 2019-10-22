@@ -53,7 +53,7 @@ function concertThis(inputTopic) {
           "\nVenue Location: " +
           response.data[i].venue.city +
           "\nDate of the Event: " +
-          moment(dateArr[0], "MM-DD-YYYY") +
+          moment(dateArr[0]).format("MM-DD-YYYY") +
           "--------------------";
 
         console.log(concertResults);
